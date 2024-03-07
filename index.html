@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/output.css">
+    <title>Responsive Landing Page</title>
+    
+</head>
+<body class="dark:bg-slate-800 dark:text-white" >
+    <div class="max-w-screen-xl my-0 mx-auto flex flex-col md:h-screen justify-between pb-5">
+        <header class=" md:static fixed  pb-5 right-0 left-0 h-auto   max-w-screen-xl my-0 mx-auto bg-white z-50">
+            <div class="p-2 pb-4 sm:static">
+                <form action="#" method="get" class="flex justify-between">
+                    <strong class="text-3xl">EgTech</strong>
+                    <label for="">
+                        <input type="text" name="" id="search" placeholder="Search Courses" class="outline rounded-full outline-1 sm:w-96 w-auto focus:outline focus:outline-blue-400 pl-5 py-2 ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+
+                    <div>
+                        <button type="submit" class="px-7 py-1.5 bg-black rounded-full text-white hover:bg-white hover:text-black hover:outline hover:outline-1 transition-all duration-500 ease-in-out hidden md:inline-block sm:hidden">signup</button>
+                        <button type="submit" class="px-7 py-1.5 bg-black rounded-full text-white hover:bg-white hover:text-black hover:outline hover:outline-1 transition-all duration-500 ease-in-out hidden sm:inline-block">Login</button>
+                    </div>
+                </form>
+                <hr class="mt-5 bg-black h-0.5 ">
+                <div class=" mt-1  md:hidden ">
+                    <div class='w-9 h-1 bg-slate-900 dark:bg-slate-100 rounded-full relative after:bg-slate-900 after:dark:bg-slate-100 after:block after:w-full after:absolute after:top-2 after:h-1 after:rounded-full 
+                    before:bg-slate-900 before:dark:bg-slate-100 before:block before:w-full before:absolute before:bottom-2 before:h-1 before:rounded-full cursor-pointer before:transition-all  before:ease-in-out before:duration-200 after:transition-all after:ease-in-out after:duration-200 mt-4 sm:hidden'  id='hamburger'> </div>
+                </div>
+
+            </div>
+            <div class="flex justify-between items-center z-50">
+                <ul class="flex flex-col sm:flex-row justify-around items-center fixed sm:static right-0 left-12 bottom-0 top-0  z-40 p-5 sm:p-0 bg-slate-100 sm:bg-inherit text-black sm:text-inherit left-full " id="nav-bar">
+                    <li class="px-7"><a href="#" class="hover:font-semibold"><strong class="hidden sm:inline-block" id="catagory">Catagories</strong></a></li>
+                    <li class="px-7"><a href="#" class="hover:font-semibold">Home</a></li>
+                    <li class="px-7"><a href="#" class="hover:font-semibold hidden sm:inline-block" id="catagory">Courses</a></li>
+                    <li class="px-7"><a href="#" class="hover:font-semibold">About</a></li>
+                    <li class="px-7"><a href="#" class="hover:font-semibold hidden sm:inline-block" id="catagory">Materials</a></li>
+                    <!-- <li class="px-7"><a href="#" class="hover:font-semibold">Blog</a></li> -->
+                    <li class="px-7"><a href="#" class="hover:font-semibold hidden sm:inline-block" id="catagory">Contact</a></li>
+                </ul>
+                 
+                <div class="relative hidden md:hidden">
+                    <!-- <span class="sm:hidden md:inline-block">Theme</span> -->
+                    <button class="py-1 px-4 sm:px-1 md:px-4 outline outline-1 rounded-lg mx-3 sm:mx-0.5 " id="theme-btn">Light </button>
+                    <div class="absolute flex flex-col -left-16 right-0 top-10 bg-slate-100 rounded-lg " id="dropdown-menu">
+                        <a href="#" class="text-gray-700  block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0"> Dark </a>
+                        <hr>
+                        <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Light</a>
+                        <hr>
+                        <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">System</a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </header>
+       
+            <div class="flex md:flex-row mt-7 pt-24 h-auto flex-col justify-between " id="hero-section">
+                <div id="hero-text" class=" p-4 md:mt-10 md:pt-6  -mt-3 sm:mt-16 sm:-mb-24 ">
+                    <h1 class="text-6xl font-bold w-11/12 ">Learning skills for better career</h1>
+                    <p class="my-6 w-10/12">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, id. Lorem, ipsum dolor.
+                    </p>
+                    <form action="" class=" ">
+                        <span class=""><input type="text" name="" placeholder="Enter your name" id="" class="p-3 rounded-full pl-6 outline outline-1 outline-slate-600 w-80 focus:outline focus:outline-1 focus:outline-blue-400  border-none" style="z-index: -1; position: relative;"/>
+                            <button type="submit" class="px-7 py-3 outline outline-1 outline-black  bg-black rounded-full text-white hover:shadow-lg hover:px-10 transition-all duration-500 ease-in-out md:-ml-16 relative  mt-3 md:mt-0 " style="z-index: -1;">14 Days Trial</button>
+                        </span>
+
+                        <p class="pt-5 ml-4 "> &#183; Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </form>
+                </div>
+                <div id="hero-image bg-green" class="bg-green md:w-3/4 md:mt-40 ">
+                    <img src="public/images/Webinar-rafiki.png" alt="" class="w-full " id="hero-image" >
+                </div>
+            </div>
+            <ul id="data" class="flex md:flex-row flex-col justify-around p-3 py-10 mt-5 sm:-mt-10 rounded-lg bg-slate-200 dark:bg-transparent ">
+                <li class=" p-3 px-10 border-r-2 border-slate-700 dark:text-black"> <div><strong class="text-3xl p dark:text-black">12K+</strong ><p class="dark:text-black">Finish Candidates</p></div></li>
+                <li class=" p-3 px-10 border-r-2 border-slate-700"> <div><strong class="text-3xl p">9+</strong><p>Years of Experience</p></div></li>
+                <li class=" p-3 px-10 border-r-2 border-slate-700"> <div><strong class="text-3xl p">358+</strong><p>Excellence Awards</p></div></li>
+                <li class=" p-3 px-10 border-r-2 border-slate-700"> <div><strong class="text-3xl p">47+</strong><p>Brand Partners</p></div></li>
+            </ul>
+    </div>
+    <script src="./src/scripts/index.js"></script>
+</body>
+</html>
