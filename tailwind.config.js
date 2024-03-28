@@ -4,7 +4,15 @@ module.exports = {
   content: ['./index.html',
             './src/**/*.{css,js}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily :{
+        'robotoCondensed': ["'Roboto Condensed'"],
+      },
+      colors:{
+        'blue-black': '#0d3860',
+      },
+    },
+    
   },
   plugins: [],
 }

@@ -1,4 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.dark body{
+  background: rgb(31,144,191);
+  background: linear-gradient(176deg, rgba(31,144,191,1) 0%, rgba(13,56,96,1) 0%, rgba(2,0,36,1) 100%);
+}
+
+@media  screen and (max-width: 639px) {
+  .dark #nav-bar {
+    background: rgb(31,144,191);
+    background: linear-gradient(164deg, rgba(31,144,191,1) 0%, rgba(23,105,149,1) 0%, rgba(2,0,36,1) 100%); 
+  }
+  
+}
+
+.dark input{
+  color: black;
+  background-color: azure;
+}
+
+/* .dark header{
+  background-color: #176995;
+  backdrop-filter: blur(900px);
+} */
 
