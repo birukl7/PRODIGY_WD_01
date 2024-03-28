@@ -2164,6 +2164,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.dark\:text-black:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .dark\:outline:where(.dark, .dark *) {
   outline-style: solid;
 }
@@ -2174,6 +2179,10 @@ video {
 
 .dark\:outline-white:where(.dark, .dark *) {
   outline-color: #fff;
+}
+
+.dark\:outline-black:where(.dark, .dark *) {
+  outline-color: #000;
 }
 
 .before\:dark\:bg-slate-100:where(.dark, .dark *)::before {

@@ -16,6 +16,9 @@ const heroImage = document.querySelector('#hero-image');
 const toggleThemeMode = () => {
     dropDownMenu.classList.toggle('h-0');
     dropDownMenu.classList.toggle('overflow-hidden');
+    dropDownMenu.classList.toggle('outline');
+    dropDownMenu.classList.toggle('outline-1');
+    dropDownMenu.classList.toggle('outline-black');
 };
 
 // Event listener for theme button click
